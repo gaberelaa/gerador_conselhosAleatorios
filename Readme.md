@@ -12,8 +12,8 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- URL da solução:
-- URL do site ao vivo:
+- URL da solução: https://www.frontendmentor.io/solutions/random-advice-generator-responsive-8IvH29SL0t
+- URL do site ao vivo: https://gaberelaa.github.io/gerador_conselhosAleatorios/
 
 ### Tecnologias utilizadas
 
