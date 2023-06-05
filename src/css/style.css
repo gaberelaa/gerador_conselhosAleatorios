@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    cursor: default;
+}
+
+:root {
+    /* colors */
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+
+}
+
+body {
+    background-color: var(--Dark-Blue);
+}
+
+main {
+    width: 100vw;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: auto;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Dark-Grayish-Blue);
+    padding: 0 2rem;
+    padding-top: 2rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.container h1 {
+    color: var(--Neon-Green);
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    letter-spacing: 0.4rem;
+}
+
+.container blockquote {
+    padding: 1.5rem 0;
+    color: var(--Light-Cyan);
+    font-size: 1.2rem;
+    width: 21rem;
+    text-align: center;
+    height: 8.2rem;
+}
+
+blockquote:before {
+    content: open-quote; /* Adiciona a aspa de abertura antes da citação */
+}
+
+blockquote:after {
+    content: close-quote; /* Adiciona a aspa de abertura antes da citação */
+}
+
+.divider img {
+    width: 23rem;
+}
+
+.buttonArea {
+    position: absolute;
+    top: 13.5rem;
+}
+
+main button {
+    background-color: var(--Neon-Green);
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+button img {
+    width: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 2rem var(--Neon-Green);
+}
+
+
+@media screen and (min-width: 350px) and (max-width:440px) {
+    .container {
+        width: 22rem;
+        height: 18rem;
+       justify-content: center;
+    }
+
+    .divider img {
+        width: 19rem;
+    }
+
+    .buttonArea {
+        top: 16.4rem;
+    }
+}
